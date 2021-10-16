@@ -1,0 +1,38 @@
+.section{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+
+    @media(max-width:720px){
+        flex-direction: column;
+        height: 30rem;
+    }
+
+}
+
+.competences{
+    margin: 0 auto 0 auto;
+    width: 20%;
+    height: 100%;
+
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+    h1{
+        background: transparent;
+    }
+
+    p{
+        margin-top: 1rem;
+        background: transparent;
+    }
+
+    @media(max-width:720px){
+        width: 100%;
+    }
+}

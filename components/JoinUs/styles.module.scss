@@ -1,0 +1,60 @@
+.joinSession{
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.sideText{
+  width: 60%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h6 {
+      font-weight: 500;
+      color: white;
+      font-size: 1.2rem;
+  }
+
+  h1{
+      color: #8257e5;
+      font-size: 3rem;
+  }
+  p {
+      color: white;
+      text-align: center;
+      width: 30%;
+      margin-top: 2rem;
+      font-size: 1.25rem;
+  }
+
+  button{
+      width: 25%;
+      height: 4rem;
+      background: #8257e5;
+      color: white;
+      margin-top: 1rem;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      cursor: pointer;
+  }
+
+
+
+  @media(max-width:720px){
+      width: 100%;
+  }
+  
+  p{
+      width: 80%;
+  }
+
+  button{
+      width: 60%;
+      margin-top: 2rem;
+  }
+}
