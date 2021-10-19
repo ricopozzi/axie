@@ -1,3 +1,4 @@
+
 import styles from './styles.module.scss'
 import React, { useRef, useState } from 'react'
 import { Form } from '@unform/web'
@@ -23,14 +24,14 @@ const ContactForm = () => {
   async function handleSubmit(data:object) {
 
     try {
-        
+        //@ts-ignore
         formRef.current.setErrors({})
 
 
     
         await schema.validate(data, {abortEarly: false})
         await axios.post('http://localhost:3000/api/notion', data)
-
+        //@ts-ignore
         setIsSubmited(true)
         
     } catch (err) {
@@ -39,10 +40,11 @@ const ContactForm = () => {
         if (err instanceof yup.ValidationError) {
 
             err.inner.forEach(error => {
+                //@ts-ignore
                 validationErrors[error.path] = error.message
             
             })
-
+            //@ts-ignore
             formRef.current.setErrors(validationErrors)
     }
 }
