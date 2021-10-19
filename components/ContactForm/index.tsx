@@ -20,7 +20,7 @@ const ContactForm = () => {
     })
    
 
-  async function handleSubmit(data) {
+  async function handleSubmit(data:object) {
 
     try {
         
