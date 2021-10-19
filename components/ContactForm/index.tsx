@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     
         await schema.validate(data, {abortEarly: false})
-        await axios.post('http://localhost:3000/api/notion', data)
+        await axios.post('/api/notion', data)
         //@ts-ignore
         setIsSubmited(true)
         
