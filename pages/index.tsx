@@ -2,6 +2,8 @@ import Header from '../components/Header/index'
 import styles from './home.module.scss'
 import Competences from '../components/Competences/index'
 import JoinUs from '../components/JoinUs/index'
+import Invest from '../components/Invest/index'
+import Footer from '../components/Footer/index'
 
 const Home = () => {
   return (
@@ -24,6 +26,8 @@ const Home = () => {
 
       <Competences />
       <JoinUs />
+      <Invest />
+      <Footer />
     </>
   )
 }

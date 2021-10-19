@@ -1,0 +1,104 @@
+.investSection{
+    width: 100%;
+    height: 25rem;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width:720px){
+        flex-direction: column;
+        height: 35rem;
+    }
+
+}
+
+.sideText{
+    width: 35%;
+    height: 80%;
+    margin: 0 auto 0 auto;
+
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    h6 {
+        font-weight: 500;
+        color: white;
+        font-size: 1.2rem;
+    }
+  
+    h1{
+        color: #8257e5;
+        font-size: 3rem;
+        text-align: center;
+    }
+    p {
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 1.25rem;
+  
+    }
+  
+    button{
+        width: 25%;
+        height: 4rem;
+        background: #8257e5;
+        color: white;
+        margin-top: 1rem;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        cursor: pointer;
+  
+        box-shadow: 0 0 1em #8257e5;  
+  
+  
+  
+    }
+
+    @media(max-width:720px){
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+        h6{
+            margin-top: 2rem;
+        }
+
+        button{
+            width: 50%;
+        }
+    }
+}
+
+.sideImage{
+    width: 35%;
+    height: 80%;
+    margin: 0 auto 0 auto;
+
+    img{
+        width: 50%;
+        height: 100%;
+    }
+
+    @media(max-width:720px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        
+        img{
+            width: 50%;
+            height: 100%;
+        }
+
+    }
+
+}
