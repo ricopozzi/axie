@@ -19,7 +19,7 @@ export default async function Handler(request: NextApiRequest, response: NextApi
         turnGames,
     } = request.body
 
-    notion.pages.create({
+   return notion.pages.create({
         parent:{
             database_id: process.env.NOTION_DATABASE_APPLY_ID || '',
         },
