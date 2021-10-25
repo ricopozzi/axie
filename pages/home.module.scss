@@ -46,6 +46,12 @@
         cursor: pointer;
 
         box-shadow: 0 0 1em #8257e5;  
+
+        a {
+            text-decoration: none;
+            background: inherit;
+            color: whitesmoke;
+        }
     }
 
     @media(max-width:720px){

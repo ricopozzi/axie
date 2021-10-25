@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { useField } from '@unform/core'
 import styles from './styles.module.scss'
+
 //@ts-ignore
 const Input = ({ name, ...rest }) => {
     const inputRef = useRef()

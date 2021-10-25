@@ -35,13 +35,16 @@
   transition: .3s;
   opacity: .7;
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   &:hover{
     color: white;
     opacity: 1;
 
-    div {
-      border-bottom: solid 3px #8257e5;
-    }
+    
 
   }
 
@@ -68,6 +71,11 @@
   cursor: pointer;
   opacity: .7;
   transition: .3s;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   &:hover{
     color: white;
@@ -114,10 +122,21 @@
     
     box-shadow: 0 0 1em #8257e5;  
     background: #8257e5;
+    
+    a{
+      text-decoration: none;
+      background: inherit;
+      color: white;
+  
+    }
 
     &:hover{
       background: whitesmoke;
       color: #8257e5 ;
+
+      a {
+        color: #8257e5 ;
+      }
     }
   }
 

@@ -15,8 +15,7 @@ const Sobre = () => {
             <h1>Conheça a Bolsa Axie Brasil!</h1>
             <p>Junte-se a Nós!</p>
 
-            <button>Aplicar para Bolsa!</button>
-            
+            <button ><a href="/aplicar">Aplicar para a Bolsa!</a></button>            
          </div>
          </main>
 
@@ -46,7 +45,7 @@ const Sobre = () => {
                 
          </section>
          <section className={styles.buttonSection} >
-         <button className={styles.buttonz} ><a href="">Aplicar para a Bolsa!</a></button>
+         <button className={styles.buttonz} ><a href="/aplicar">Aplicar para a Bolsa!</a></button>
          </section>
          
          <Footer />

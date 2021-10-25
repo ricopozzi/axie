@@ -8,7 +8,7 @@ const JoinUs = () => {
                 <h1>Junte-se a Nós</h1>
                 <p>Inscreva-se para participar de nossa bolsa e enviaremos uma notificação caso você seja aceito.</p>
 
-                <button>Aplicar para a Bolsa!</button>
+                <button> <a href="/aplicar">Aplicar para a Bolsa!</a> </button>
 
             </div>
         </section>

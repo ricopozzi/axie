@@ -19,7 +19,7 @@ const Home = () => {
             <p>Bem vindos jogadores de Axie Infinity!</p>
             <p>Não tem dinheiro? Não tem um time?</p>
 
-            <button>Aplicar para Bolsa!</button>
+            <button> <a href="/aplicar"> Aplicar para Bolsa!</a></button>
             
         </div>
       </main>

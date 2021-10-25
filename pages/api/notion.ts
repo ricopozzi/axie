@@ -6,8 +6,6 @@ const notion = new Client({
 })
 
 export default async function Handler(request: NextApiRequest, response: NextApiResponse){
-    console.log(request.body)
-
     const { nome, email, tel } = request.body
     
     await notion.pages.create({
