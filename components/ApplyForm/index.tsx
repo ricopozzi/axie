@@ -12,6 +12,7 @@ const ApplyForm = () => {
     const [scolarChecked, setScolarChecked ] = useState(false)
     const [ownChecked, setOwnChecked ] = useState(false)
     const [turnChecked, setTurnChecked ] = useState(false)
+    const [isSubmited, setIsSubmited] = useState(null)
 
     const toggleKnow = () => {
         setKnowChecked(!knowChecked)
@@ -56,6 +57,9 @@ const ApplyForm = () => {
             await schema.validate(data, { abortEarly: true})
             await axios.post('/api/apply', data)
 
+            //@ts-ignore
+            setIsSubmited(true)
+
             console.log(data)
             
         } catch (err) {
@@ -75,7 +79,11 @@ const ApplyForm = () => {
     }
 }
 
-    return(
+    return isSubmited ? (
+        <section className={styles.formSectionSubmited} >
+             <div className={styles.done} > <p>Obrigado! Entraremos em contato</p></div>
+        </section>
+    ) : (
         <>
         <Form ref={formRef} className={styles.formSection} onSubmit={handleSubmit}>
                 <h1>Aplique para a bolsa Axie</h1>
