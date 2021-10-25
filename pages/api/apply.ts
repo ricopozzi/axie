@@ -16,7 +16,7 @@ export default async function Handler(request: NextApiRequest, response: NextApi
         fullName,
         age,
         city,
-        turnGames
+        turnGames,
     } = request.body
 
     notion.pages.create({
