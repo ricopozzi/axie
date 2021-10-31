@@ -15,7 +15,7 @@ const Home = () => {
         </div>
 
         <div className={styles.sideText} >  
-            <h1>1# Primeira <br /> Bolsa Axie no Brasil</h1>
+            <h1>A Bolsa Axie mais IRADA do Brasil</h1>
             <p>Bem vindos jogadores de Axie Infinity!</p>
             <p>Não tem dinheiro? Não tem um time?</p>
 
